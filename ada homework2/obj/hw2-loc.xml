@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_file>
+    <file_marker column=" 55" line=" 11" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework2\src\aircraft.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 34" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework2\src\coords.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 14" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework2\src\coords.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 14" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework2\src\aircraft.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 52" line=" 11" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework2\src\mainair.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework2\hw2.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework2\src\mainair.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

@@ -1,0 +1,164 @@
+V "GNAT Lib v2020"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U mainair%b		mainair.adb		5e87b208 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.discrete_random%s
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W aircraft%s		aircraft.adb		aircraft.ali
+W card_dir%s		card_dir.ads		card_dir.ali
+W coords%s		coords.adb		coords.ali
+W system%s		system.ads		system.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050644 bb51c45a ada.numerics%s
+D a-nudira.ads		20200819050644 5984dff3 ada.numerics.discrete_random%s
+D a-nudira.adb		20200819050644 0bfd6ec4 ada.numerics.discrete_random%b
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D aircraft.ads		20201019202658 8a1086f7 aircraft%s
+D aircraft.adb		20201019202708 57653eb6 aircraft%b
+D card_dir.ads		20201015215158 a146b7b9 card_dir%s
+D coords.ads		20201019110312 894a1812 coords%s
+D coords.adb		20201019120356 a27f0e7b coords%b
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D mainair.adb		20201019085730 a424c79d mainair%b
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-imgint.ads		20200819050646 02dbe0c2 system.img_int%s
+D s-imguns.ads		20200819050646 9ff43cf7 system.img_uns%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-rannum.ads		20200819050648 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20200819050648 5f999925 system.random_numbers%b
+D s-ransee.ads		20200819050648 01a57b33 system.random_seed%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-valuns.ads		20200819050648 35067db9 system.val_uns%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [mainair standard 4 11 none]
+G r i none [mainair standard 4 11 none] [aircraft standard 5 12 none]
+G r s coord [mainair standard 4 11 none] [coordIP coords 22 10 none]
+G r i none [mainair standard 4 11 none] [coord_with_array coords 17 16 none]
+G r c none [mainair standard 4 11 none] [get_x coords 6 14 none]
+G r c none [mainair standard 4 11 none] [get_y coords 7 14 none]
+G r c none [mainair standard 4 11 none] [set_x coords 9 15 none]
+G r c none [mainair standard 4 11 none] [set_y coords 10 15 none]
+G r c none [mainair standard 4 11 none] [change_to_direction coords 13 15 none]
+G r c none [mainair standard 4 11 none] [get_distance coords 12 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 20|1r16 1r29 2r5 2r18
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 20|1w33 2r22
+X 7 a-nudira.adb
+53V16 Random[28|83]{integer} 29|393b13[14|35[20|5]]
+65V16 Random[28|83]{integer} 29|393b13[14|35[20|5]]
+X 10 a-textio.ads
+57K13*Text_IO 727e16 20|1w20 2r9
+264U14*New_Line 20|37s3 44s3 54s3 61s3 64s3 73s3 102s3 105s3 109s3
+465U14*Put 20|35s3 35s24 35s64 35s74 36s3 36s24 36s64 36s74 42s3 42s24 42s64
+. 42s74 43s3 43s24 43s64 43s74 63s3 68s3 68s24 69s3 78s3 78s24 78s64 78s74
+. 81s3 81s24 81s64 81s74 84s3 84s24 84s64 84s74 87s3 87s24 87s64 87s74 90s3
+. 90s24 90s64 90s74 93s3 93s24 93s64 93s74 96s3 96s24 96s64 96s74 99s3 99s24
+. 99s64 99s74 103s3 103s24 103s64 103s74 104s3 104s24 104s64 104s74 107s3
+. 111s3 114s3
+508U14*Put_Line 20|35s114 36s114 39s3 42s114 43s114 48s32 49s8 51s32 52s8
+. 57s3 58s32 59s8 66s3 69s28 70s32 71s8 75s3 78s114 81s114 84s114 87s114
+. 90s114 93s114 96s114 99s114 103s114 104s114 108s3 112s3 115s3
+X 13 aircraft.ads
+5k12*Aircraft 31e13 20|1w6 5r30
+6R9 Aircraft_Type 20|8r5[5] 9r5[5]
+9U14 Ascend 20|56s3[5]
+10U14 Land 20|47s3[5]
+11V13 Get_Is_In_The_Air{boolean} 20|48s6[5] 51s6[5] 58s6[5] 70s6[5]
+12V13 Get_Coord{16|4R10} 20|35s48[5] 35s98[5] 36s48[5] 36s98[5] 42s48[5]
+. 42s98[5] 43s48[5] 43s98[5] 68s48[5] 69s57[5] 78s48[5] 78s98[5] 81s48[5]
+. 81s98[5] 84s48[5] 84s98[5] 87s48[5] 87s98[5] 90s48[5] 90s98[5] 93s48[5]
+. 93s98[5] 96s48[5] 96s98[5] 99s48[5] 99s98[5] 103s48[5] 103s98[5] 104s48[5]
+. 104s98[5] 112s49[5] 115s49[5]
+14U14 Set_Card_Dir_Coord 20|77s3[5] 80s3[5] 83s3[5] 86s3[5] 89s3[5] 92s3[5]
+. 95s3[5] 98s3[5]
+15U14 Start 20|40s3[5] 40s13[5]
+16U14 Compare 20|63s33[5]
+17V13 Get_Distance{integer} 20|108s26[5]
+21u17 Action 20|25r28[5]
+X 15 card_dir.ads
+1K9*Card_Dir 4e13 20|1w58 2r47
+2n31*N{2E8} 20|77r25
+2n34*NE{2E8} 20|86r25
+2n38*E{2E8} 20|89r25
+2n41*SE{2E8} 20|80r25
+2n45*S{2E8} 20|95r25
+2n48*SW{2E8} 20|98r25
+2n52*W{2E8} 20|92r25
+2n55*NW{2E8} 20|83r25
+X 16 coords.ads
+2K9*Coords 27e11 20|1w50 2r39
+4R10*Coord 25e34 20|11r58
+6V14*Get_X{integer} 20|35s42 36s42 42s42 43s42 68s42 78s42 81s42 84s42 87s42
+. 90s42 93s42 96s42 99s42 103s42 104s42
+7V14*Get_Y{integer} 20|35s92 36s92 42s92 43s92 69s51 78s92 81s92 84s92 87s92
+. 90s92 93s92 96s92 99s92 103s92 104s92
+9U15*Set_X 20|15s5
+10U15*Set_Y 20|16s5
+17v16*Coord_With_Array 20|23r34
+X 18 interfac.ads
+74M9*Unsigned_32
+77M9*Unsigned_64
+X 20 mainair.adb
+4U11*mainair 4b11 116l5 116t12
+5K11 My_Aircraft[13|5] 6r7
+8r3 A{13|6R9[5]} 35r58 35r108 40m9 40r9 42r58 42r108 47m8 47r8 48r24 56m10
+. 56r10 58r24 63m41 63r41 67m13 67r13 68r58 69r67 70r24 77m22 77r22 78r58
+. 78r108 80m22 80r22 81r58 81r108 83m22 83r22 84r58 84r108 86m22 86r22 87r58
+. 87r108 89m22 89r22 90r58 90r108 92m22 92r22 93r58 93r108 95m22 95r22 96r58
+. 96r108 98m22 98r22 99r58 99r108 103r58 103r108 108r39 112r59
+9r3 B{13|6R9[5]} 36r58 36r108 40m19 40r19 43r58 43r108 51r24 63m43 63r43
+. 104r58 104r108 108r41 115r59
+11U13 Change 11b13 11<20 11<37 11<52 17l7 17t13 25r35
+11e20 I{character} 13m5
+11b37 B{boolean} 14m5
+11r52 C{16|4R10} 15m11 16m11
+19A8 Map(integer)<integer><integer> 22r10 23r60
+21i3 tmp_cnt_map{integer} 30r22 31m7 31r22
+22a3 My_map{19A8} 30m7 112r41 115r41
+23V12 Coord_With_map[16|17]{integer} 17|48b13 20|112s26 115s26
+25U11 My_Action[13|21] 67s3
+28i7 i{integer} 30r14
+29i9 j{integer} 30r16
+X 28 s-rannum.ads
+75V13*Random{18|74M9} 29|221i21
+76V13*Random{18|77M9} 29|221i21
+

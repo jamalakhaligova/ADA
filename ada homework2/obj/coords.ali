@@ -1,0 +1,72 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U coords%b		coords.adb		2b351669 NE OO PK
+Z interfaces%s		interfac.ads		interfac.ali
+
+U coords%s		coords.ads		280cafab BN EE NE OO PK
+W card_dir%s		card_dir.ads		card_dir.ali
+
+D card_dir.ads		20201015215158 a146b7b9 card_dir%s
+D coords.ads		20201019110312 894a1812 coords%s
+D coords.adb		20201019120356 a27f0e7b coords%b
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D system.ads		20200819050648 32a08138 system%s
+G a e
+G c Z s b [get_x coords 6 14 none]
+G c Z s b [get_y coords 7 14 none]
+G c Z s b [set_x coords 9 15 none]
+G c Z s b [set_y coords 10 15 none]
+G c Z s b [get_distance coords 12 14 none]
+G c Z s b [change_to_direction coords 13 15 none]
+G c Z s s [coordIP coords 22 10 none]
+X 1 card_dir.ads
+1K9*Card_Dir 4e13 2|1w6 1r20
+2E8*Cardinal_Direction 2e58 2|13r44 3|30r43
+2n31*N{2E8} 3|34r15
+2n34*NE{2E8} 3|38r15
+2n38*E{2E8} 3|36r15
+2n41*SE{2E8} 3|39r15
+2n45*S{2E8} 3|35r15
+2n48*SW{2E8} 3|40r15
+2n52*W{2E8} 3|37r15
+2n55*NW{2E8} 3|41r15
+X 2 coords.ads
+2K9*Coords 22E10 27l5 27e11 3|1b14 54l5 54t11
+4R10*Coord 6r23 7r23 9r28 10r28 12r40 13r75 17r50 22c10 25e34 3|3r22 8r22
+. 14r27 19r27 25r42 30r74 48r47
+6V14*Get_X{integer} 6>20 3|3b13 6t7
+6r20 C{4R10} 3|3b19 5r14
+7V14*Get_Y{integer} 7>20 3|8b13 11t7
+7r20 C{4R10} 3|8b19 10r14
+9U15*Set_X 9<21 9>34 3|14b14 17t7
+9r21 C{4R10} 3|14b20 16m7
+9i34 x_new{integer} 3|14b33 16r14
+10U15*Set_Y 10<21 10>34 3|19b14 22t7
+10r21 C{4R10} 3|19b20 21m7
+10i34 y_new{integer} 3|19b33 21r14
+12V14*Get_Distance{integer} 12>27 12>33 3|25b13 28t7
+12r27 C_act{4R10} 3|25b26 27r26 27r51
+12r33 C_oth{4R10} 3|25b33 27r16 27r41
+13U15*Change_To_Direction 13>35 13=65 3|30b14 45t7
+13e35 CarDir{1|2E8} 3|30b34 33r12
+13r65 C{4R10} 3|30b64 34m23 34r30 35m23 35r30 36m23 36r30 37m23 37r30 38m24
+. 38r31 38m40 38r47 39m24 39r31 39m40 39r47 40m24 40r31 40m40 40r47 41m24
+. 41r31 41m40 41r47
+15+12 Item 16r65 17r64 3|48r61
+16A12 Map(15+12)<integer><integer> 17r39 3|48r36
+17v16*Coord_With_Array 17>33 17>43 3|48b13 51t7
+17*33 Arr{16A12} 3|48b30 50r14
+17r43 Coor{4R10} 3|48b40 50r18 50r25
+23i28*x{integer} 3|5r16 16m9 27r22 27r32 36m25 36r32 37m25 37r32 38m26 38r33
+. 39m26 39r33 40m26 40r33 41m26 41r33 50r23
+24i28*y{integer} 3|10r16 21m9 27r47 27r57 34m25 34r32 35m25 35r32 38m42 38r49
+. 39m42 39r49 40m42 40r49 41m42 41r49 50r30
+

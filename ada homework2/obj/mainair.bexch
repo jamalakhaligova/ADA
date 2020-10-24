@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__mainair.o
+[PROJECT FILES]
+C:\GNAT\2020\bin\ada homework2\hw2.gpr
+20201016160614 b3b08d3c1f56af5025afa01ea71f8c00
+[BOUND OBJECT FILES]
+C:\GNAT\2020\bin\ada homework2\obj\card_dir.o
+C:\GNAT\2020\bin\ada homework2\obj\coords.o
+C:\GNAT\2020\bin\ada homework2\obj\aircraft.o
+C:\GNAT\2020\bin\ada homework2\obj\mainair.o
+[GENERATED SOURCE FILES]
+b__mainair.ads
+b__mainair.adb
+b__mainair.ali
+[RESULTING OPTIONS]
+-LC:\GNAT\2020\bin\ada homework2\obj\
+-LC:\GNAT\2020\bin\ada homework2\obj\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

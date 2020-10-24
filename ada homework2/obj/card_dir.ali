@@ -1,0 +1,26 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U card_dir%s		card_dir.ads		a146b7b9 NE OO PK
+
+D card_dir.ads		20201015215158 a146b7b9 card_dir%s
+D system.ads		20200819050648 32a08138 system%s
+G a e
+X 1 card_dir.ads
+1K9*Card_Dir 4l5 4e13
+2E8*Cardinal_Direction 2e58
+2n31*N{2E8}
+2n34*NE{2E8}
+2n38*E{2E8}
+2n41*SE{2E8}
+2n45*S{2E8}
+2n48*SW{2E8}
+2n52*W{2E8}
+2n55*NW{2E8}
+

@@ -1,0 +1,131 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U aircraft%b		aircraft.adb		dd75b841 NE OO PK GE
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U aircraft%s		aircraft.ads		556c23c2 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W card_dir%s		card_dir.ads		card_dir.ali
+W coords%s		coords.adb		coords.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20200819050644 bb51c45a ada.numerics%s
+D a-nudira.ads		20200819050644 5984dff3 ada.numerics.discrete_random%s
+D a-nudira.adb		20200819050644 0bfd6ec4 ada.numerics.discrete_random%b
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D aircraft.ads		20201019202658 8a1086f7 aircraft%s
+D aircraft.adb		20201019202708 57653eb6 aircraft%b
+D card_dir.ads		20201015215158 a146b7b9 card_dir%s
+D coords.ads		20201019110312 894a1812 coords%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-rannum.ads		20200819050648 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [aircraft standard 5 12 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 1r36 12|35r33 53r11 55r11 57r11
+X 4 a-numeri.ads
+16K13*Numerics 32e17 11|1r10 12|35r37
+X 5 a-nudira.ads
+44k22*Discrete_Random 81e33 11|1w19 12|35r46
+50R9 Generator<22|63R9> 12|36r22[35]
+52V13 Random{integer} 12|43s24[35] 44s24[35]
+61U14 Reset<22|100p14> 12|42s18[35]
+X 9 a-textio.ads
+57K13*Text_IO 727e16 11|1w40 12|53r15 55r15 57r15
+508U14*Put_Line 12|53s23 55s23 57s23
+X 11 aircraft.ads
+3E9 Id 4r28 6r30 20r40 26r30 12|74r11
+4V19 "<"{boolean} 4>23 4>25 12|52s21
+4*23 A{3E9}
+4*25 B{3E9}
+5k12*Aircraft 3z9 4z19 26E9 31l5 31e13 12|2b14 80l5 80t13
+6R9*Aircraft_Type 6d23 9r34 10r32 11r40 12r32 13r37 14r46 15r33 16r42 17r39
+. 21r38 26c9 30e47 12|4r34 9r32 14r40 19r32 24r37 29r46 34r33 50r42 63r39
+. 73r33
+6*23 Name{3E9} 26r23 12|52r16 52r29 54r19 54r32 74r22
+9U14*Ascend 9=21 12|4b14 7t7
+9r21 AirC{6R9} 12|4b21 6m7
+10U14*Land 10=19 12|9b14 12t7
+10r19 AirC{6R9} 12|9b19 11m7
+11V13*Get_Is_In_The_Air{boolean} 11>31 12|14b13 17t7
+11r31 AirC{6R9} 12|14b31 16r14
+12V13*Get_Coord{14|4R10} 12>23 12|19b13 22t7
+12r23 AirC{6R9} 12|19b23 21r14
+13U14*Set_Coord 13=24 13>52 12|24b14 27t7
+13r24 AirC{6R9} 12|24b24 26m7
+13r52 new_Coor{14|4R10} 12|24b52 26r28
+14U14*Set_Card_Dir_Coord 14=33 14>61 12|29b14 32t7
+14r33 AirC{6R9} 12|29b33 31m36 31r36
+14e61 Car_Dir{13|2E8} 12|29b61 31r28
+15U14*Start 15=20 12|34b14 48t7
+15r20 AirC{6R9} 12|34b20 46m13 46r13 47m13 47r13
+16U14*Compare 16=22 16=28 12|50b14 60t7
+16r22 AirC1{6R9} 12|50b22 52r10 54r13
+16r28 AirC2{6R9} 12|50b28 52r23 54r26
+17V13*Get_Distance{integer} 17>26 17>32 12|63b13 70t7
+17r26 AirC1{6R9} 12|63b26 64r24
+17r32 AirC2{6R9} 12|63b32 65r24
+20U22 Change 20<29 20<44 20<64 12|76s7
+20*29 newId{3E9} 12|76r14
+20b44 inAir{boolean} 12|76r29
+20r64 airPos{14|4R10} 12|76r58
+21u17*Action 21=24 12|73b13 77t6
+21r24 Airc{6R9} 12|73b20 74r17 76m38 76r38 76m68 76r68
+28r41 Pos_Airplane{14|4R10} 12|21r19 26m12 31m41 46m18 47m18 64r30 65r30
+. 76m73
+29b41 Is_In_The_Air{boolean} 12|6m12 11m12 16r19 76m43
+X 12 aircraft.adb
+35K15 Random_int[5|44] 36r11 42r7 43r13 44r13
+36r7 G{5|50R9[35]} 42r24 43r31 44r31
+37i7 x1{integer} 43m7 46r31
+38i7 y1{integer} 44m7 47r31
+64r7 Cord1{14|4R10} 67r27
+65r7 Cord2{14|4R10} 67r33
+74*3 newId{11|3E9} 76m23
+X 13 card_dir.ads
+1K9*Card_Dir 11|1w56 1r77 13|4e13
+2E8*Cardinal_Direction 11|14r71 12|29r74 13|2e58
+X 14 coords.ads
+2K9*Coords 11|1w49 1r70 14|27e11
+4R10*Coord 11|12r54 13r65 20r76 28r56 12|19r54 24r65 64r15 65r15 14|25e34
+9U15*Set_X 12|46s7
+10U15*Set_Y 12|47s7
+12V14*Get_Distance{integer} 12|67s14
+13U15*Change_To_Direction 12|31s8
+
