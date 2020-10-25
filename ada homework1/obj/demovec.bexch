@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__demovec.o
+[PROJECT FILES]
+C:\GNAT\2020\bin\ada homework1\hw1.gpr
+20201025111616 b1bb553f5fdc0c18389c08a5f875e968
+[BOUND OBJECT FILES]
+C:\GNAT\2020\bin\ada homework1\obj\vector_package.o
+C:\GNAT\2020\bin\ada homework1\obj\demovec.o
+[GENERATED SOURCE FILES]
+b__demovec.ads
+b__demovec.adb
+b__demovec.ali
+[RESULTING OPTIONS]
+-LC:\GNAT\2020\bin\ada homework1\obj\
+-LC:\GNAT\2020\bin\ada homework1\obj\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
