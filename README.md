@@ -1,2 +1,2 @@
 # ADA
- My solutions for the course ADA. (ELTE)
+ My files for ADA(ELTE) 2020 first semester
