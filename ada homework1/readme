@@ -1,4 +1,5 @@
 ADA :: 1. Homework
+----
 Here is your first mandatory homework.
 
 Create the Vector type and its operations. Place the Vector type in a package together with its operations. Represent the Vector in a limited record with discriminant. Define an array called TArray containing Integer numbers. Use the following specification; in a main.adb file test extensively every operation of the package.
