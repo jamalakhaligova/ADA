@@ -1,4 +1,6 @@
-#Generic programming mid-term exam
+Generic programming mid-term exam
+---
+
 For each mark create a directory and place the solution for that mark in there (e.g. /2 for mark 2, /3 for mark 3 etc.) Submit in a .zip only source files: .adb, .ads files and the connected .gpr project file. Please delete the .o, .exe etc. files. Only individually solved files are corrected and considered for marking, same files will be discarded.
 
 Implement the generic package of a priority queue. The queue contains priority-data pairs. The generic parameters are:
@@ -8,7 +10,8 @@ Any elementary type (this will be the data part).
 A “<” operator on the priority type, which can be default as well.
 Implement the PQueue type as private type with a discriminant, which represents the maximum capacity of the priority queue.
 
-#For mark 2.
+For mark 2.
+
 Implement in pqueue_type.ads file the generic specification.
 Implement the Insert and Get operations.
 Insert will put an element in the queue, a priority-data pair, such that the highest priority will be the first and then it is decreasingly ordered by priority.
@@ -21,7 +24,7 @@ The operations are:
 	procedure Get ( PQ : in PQueue; P : out Priority; D : out Data; Found : out Boolean ); 
 In demo program test extensively every operation of the priority queue.
 
-#For mark 3.
+For mark 3.
 Previous operations and additionally:
 
 Implement the Remove and Size operations.
@@ -35,7 +38,7 @@ The operations are:
 	function Size (PQ : PQueue) return Integer; 
 In demo program test extensively every operation of the priority queue.
 
-#For mark 4.
+For mark 4.
 Previous operations and additionally:
 
 Overload the "<" operator such that, if P and Q are priority queues, then P < Q is true if the highest priority of P is smaller than the highest priority of Q.
@@ -48,7 +51,7 @@ Remark: it can be assumed that the max capacity of the queues is the same.
 
 In demo program test extensively every operation of the priority queue.
 
-#For mark 5.
+For mark 5.
 Previous operations and additionally:
 
 Create a generic procedure ForEach inside the package, which performs an Action generic parameter procedure (with priority and data parameters) on every element of the priority queue.
