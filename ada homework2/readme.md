@@ -102,7 +102,7 @@ Check the following program for the random generator:
 
     end test;
 The demo program:
-
+```
 with Aircraft, Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
 use Ada.Text_IO, Ada.Integer_Text_IO, Coords, Card_Dir;
 
@@ -217,3 +217,4 @@ begin
   Put("B place on map: ");
   Put_Line(Integer'image(Coord_With_map(My_map, Get_Coord(B))));
 end mainair;
+```
