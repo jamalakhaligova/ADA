@@ -1,2 +1,2 @@
 # ADA
- My files for ADA(ELTE) 2020 first semester
+2020 autumn semester my Ada files
