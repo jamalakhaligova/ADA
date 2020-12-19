@@ -9,9 +9,11 @@ procedure DemoVec is
 begin
    insert(V,2);
    insert(V,5);
-
+   insert(V,5);
    insert(V2,5);
    insert(V2,2);
+   insert(V2,2);
+
    --assign(V2,3,7);
    if (compare(V,V2)=True) then
       Put_Line("They have same numbers");

@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file />
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
       <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.ads</vfs_file>
@@ -50,7 +49,67 @@
       <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
       <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\demovec.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 41" line=" 48" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\demovec.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\demovec.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 143" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 175" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 21" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\demovec.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 143" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 163" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 164" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 163" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 25" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 163" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 144" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 143" >
+      <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
+      <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 13" line=" 170" >
       <vfs_project>C:\GNAT\2020\bin\ada homework1\hw1.gpr</vfs_project>
       <vfs_file>C:\GNAT\2020\bin\ada homework1\src\vector_package.adb</vfs_file>
     </file_marker>

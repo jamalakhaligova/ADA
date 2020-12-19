@@ -139,32 +139,49 @@ package body Vector_package is
 
       function compare(V1, V2: Vector) return Boolean is
       allsame : Boolean :=True;
-      function isEleminVec(a : Integer; V : in Vector) return Boolean is
-         contains : Boolean := False;
+
+      function Max_Pos ( T: TArray ) return Positive is
+         Mh: Positive := T'First;
       begin
-         for i in 1..V.Index loop
-            if (a = V.Data(i)) then
-               contains := True;
+         for I in T'Range loop
+            if T(Mh) < T(I) then
+               Mh := I;
             end if;
          end loop;
-         return contains;
+         return Mh;
       end;
-
+      procedure Swap ( A, B: in out Integer ) is
+         Tmp: Integer := A;
       begin
-         if V1.Index = V2.Index then
-            for i in 1..V1.Index loop
-               if (isEleminVec(V1.Data(i),V2) and (isEleminVec(V2.Data(i),V1)) and allsame) then
-                  allsame := True;
-               else
-                  allsame := False;
-               end if;
-            end loop;
-         else
-            return allsame = False;
-         end if;
+         A := B;
+         B := Tmp;
+      end;
+      procedure Order ( T: in out Vector ) is
+         Mh: Positive;
+      begin
+         for I in reverse 1..T.Index loop
+            Mh := Max_Pos( T.Data(1..I) );
+            Swap( T.Data(I), T.Data(Mh) );
+         end loop;
+      end;
+      sortedV1 : Vector := V1;
+      sortedV2 : Vector := V2;
+      begin
+      Order(sortedV1);
+      Order(sortedV2);
 
-         return allsame;
-
+      if sortedV1.Index = sortedV2.Index then
+         for i in 1..sortedV1.Index loop
+            if sortedV1.Data(i)=sortedV2.Data(i) and allsame then
+               allsame := True;
+            else
+               allsame := False;
+            end if;
+         end loop;
+      else
+         return allsame = False;
+      end if;
+      return allsame;
       end;
 
       procedure copy(V: in out Vector; arr: TArray) is
