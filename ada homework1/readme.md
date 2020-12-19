@@ -1,4 +1,4 @@
-ADA :: 1. Homework
+ADA 1. Homework
 ----
 Here is your first mandatory homework.
 
