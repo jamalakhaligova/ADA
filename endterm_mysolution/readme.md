@@ -40,7 +40,7 @@ Virus is at 9,10
 
 The cells try to defend themselves against some of the infections, using a random Boolean to decide if a cell will be infected or not, each time a virus moves into it. The viruses are reproductive, i.e. when they infect a cell then they create a new virus (this causes 0.5 delay in their movement). Start the same 3 viruses.
 
-- Hint: use access type and create dynamically a new virus inside the Virus task. For this you have to introduce a type synonym to the Virus task type (subtype Virus_Type is Virus;) and use that in the pointer type and in the new expressions when creating pointers. The original virus should move as earlier; the new virus should move in opposite direction. If the parent moved with (DX, DY) distance vector, then the child should move with (DY, -DX) distance vector. Then cells that are infected should die, i.e. that component becomes False. A part of possible output is:
+ Hint: use access type and create dynamically a new virus inside the Virus task. For this you have to introduce a type synonym to the Virus task type (subtype Virus_Type is Virus;) and use that in the pointer type and in the new expressions when creating pointers. The original virus should move as earlier; the new virus should move in opposite direction. If the parent moved with (DX, DY) distance vector, then the child should move with (DY, -DX) distance vector. Then cells that are infected should die, i.e. that component becomes False. A part of possible output is:
 
 ```
 Virus is at 10,2 infects!
