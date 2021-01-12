@@ -65,15 +65,14 @@ procedure Grade5 is
          spread(act_x,act_y,dis_x,dis_y);
          delay 2.0;
       end loop;
-      Immune_System.AntiBodies;
-      delay 0.1;
-      if(got_virus) then
-         tinyVirus := new Virus_Type(act_x,act_y,dis_x,dis_y);
+	  select
+		Immune_System.AntiBodies;
+      or
+		delay 0.1;
+      end select;
+	  if(got_virus) then
+         tinyVirus := new Virus_Type(act_x,act_y,dis_y,-dis_x);
          delay 0.5;
-         while not tiny_virus_b loop
-            Organism.Move(act_x,act_y,tiny_virus_b);
-            spread(act_x,act_y,dis_y,-dis_x);
-            end loop;
       end if;
    end Virus;
 

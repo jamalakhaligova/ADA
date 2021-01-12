@@ -24,36 +24,39 @@ procedure Grade4 is
       dis_x,dis_y : Integer;
       got_virus : Boolean := False;
       tiny_virus_b : Boolean := False;
-
+      rand : Boolean;
       type tinyVirusptr is access Virus_Type;
       tinyVirus : tinyVirusptr;
 
       procedure spread(varx,vary : Natural; dx,dy : Integer) is
       begin
-         loop
-            act_x := act_x + dis_x;
-            act_y := act_y + dis_y;
-            exit when Organism.inArea(act_x,act_y);
-         end loop;
+         act_x := act_x + dis_x;
+         act_y := act_y + dis_y;
+
+            --exit when Organism.inArea(act_x,act_y);
       end spread;
    begin
+      randomBoolean.Reset(g);
+
       act_x := varx;
       act_y := vary;
       dis_x := dx;
       dis_y := dy;
       while not got_virus loop
          --Put_Line(act_x'Image & " and " & act_y'Image);
-         Organism.Move(act_x,act_y,got_virus);
-         spread(act_x,act_y,dis_x,dis_y);
-         delay 2.0;
+         rand := randomBoolean.Random(g);
+         if(rand) then
+            Organism.Move(act_x,act_y,got_virus);
+            spread(act_x,act_y,dis_x,dis_y);
+            delay 1.0;
+         else
+            Put_Line("Couldn't infect at "& act_x'Image & " "& act_y'Image);
+         end if;
+
       end loop;
       if(got_virus) then
-         tinyVirus := new Virus_Type(act_x,act_y,dis_x,dis_y);
+         tinyVirus := new Virus_Type(act_x,act_y,dis_y,-dis_x);
          delay 0.5;
-         while not tiny_virus_b loop
-            Organism.Move(act_x,act_y,tiny_virus_b);
-            spread(act_x,act_y,dis_y,-dis_x);
-            end loop;
       end if;
 
 end Virus;
@@ -63,15 +66,10 @@ end Virus;
       entry Move(X,Y : Natural;is_infected : out Boolean) when True is begin
          --Put_Line(X'Image & " and " & Y'Image);
          if(a(X,Y)=True) then
-            a(X,Y) := randomBoolean.Random(g);
-            if(not a(X,Y)) then
-               Put_Line("virus is at "& X'Image &","& Y'Image & " couldn't infect");
-            else
                is_infected := True;
                a(X,Y):=False; --cell died
                Put_Line("virus is infected at "& X'Image &","& Y'Image);
-            end if;
-            else
+         else
             Put_Line("virus is at "& X'Image &","& Y'Image);
          end if;
       end Move;
@@ -79,12 +77,11 @@ end Virus;
       procedure Init is
         cnt : Natural := 0;
       begin
-        randomBoolean.Reset(g);
         for i in 2..10 loop
             for j in 2..10 loop
                if (i=j)then
                   a(i,j) := True;
-               elsif (i mod j =0) then
+               elsif (i mod j =0 or j mod i=0) then
                   a(i,j) := True;
                else
                   a(i,j) := False;
