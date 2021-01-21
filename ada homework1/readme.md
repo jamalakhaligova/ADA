@@ -27,6 +27,6 @@ package Vector_package is
    procedure clear(V: in out Vector); -- clear the Vector and make it empty 
    procedure print_Vector(V: in Vector); -- prints the Vector
 
-- private
+ private
 ...
 ```
